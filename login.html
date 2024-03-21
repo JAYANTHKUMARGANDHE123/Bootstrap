@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let username = prompt("Enter  username");
+    let password = prompt("Enter  password");
+    let res = username.substring(0, 3);
+    let defaultPassword = res.concat("123");
+    
+    if (password == defaultPassword) {
+        document.write("Login success");
+    } 
+    else {
+        document.write("Invalid password");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+Bootstrap : is a framework of HTML , css ,JAvascript to create a responsive websites and mobile first projects on the web . (Prioritizing mobile application over web-application).
+
+-> Frontend framework includes the usage of typography,forms,buttons,tables,navigation,modals,image-carousels etc and some javascript plugins.
+
+->Bootstrap is funded by Twitter (X).
+
+Framework : is an environment to create applications , developed by a programming / scripting language to develop Large Scale Applications.
+
+
+Library : is a group of reusable code , which comes with programming / scripting language .
+
+
+** Media queries in CSS is replaced by bootstrap for creating a responsive website .
+
+
+History of Bootstrap :-
+
+-> First released in 2001 by Mark Otto and Jacob Thornton .
+
+-> Current Production version 5.2.3 .
+
+-> The first comprehensive framework - Gained popularity very quickly.
+
+Why Responsive Design :- 
+
+-> Users increasingly accessing websites from a variety of viewport (Different screens with different size. [mobile view,Tab view,System view,etc...]).
+
+Responsive website : - A website that can change its template , appearance based on the viewport of the user . is known as a responsive website .
+
+Foundation for Responsive website Design :-
+
+> Grid System  - we'll deal with bootstrap Grid System next .
+
+> Fluid Images - we'll look at bootstrap support later.
+
+> Media queries.
+
+Syntax for Media Queries :-
+
+. CSS technology to apply some styles based on the size of the viewport .
+
+@media (min-width:992px){
+/*CSS styles to be applied*/
+} 
+
+
+Media.html : -
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width:700x){
+            .myimg{
+                height:100px;
+                width:100px;
+                position: absolute;
+                left:50px;
+            }
+            .myh1{
+                position:absolute;
+                left: 80px;
+                top: 250px;
+            }
+        }
+        @media only screen and (min-width:700px){
+            .myimg{
+                height:300px;
+                width: 300px;
+                position: absolute;
+                left:450px;
+            }
+            .myh1{
+                position: absolute;
+                left: 150px;
+                top:150px;
+            }
+            .mydiv{
+                background-color: aqua;
+                border:1px solid black;
+                height:400px;
+                width:800px;
+                padding: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv">
+    <h1 class="myh1">Realme</h1>
+    <img src="https://image01.realme.net/general/20230816/16921790202276862a817d8ef418dae7126dfd681ca8a.png?width=1440&height=1440&size=428777.webp" class="myimg">
+    </div>
+</body>
+</html>
+
+Program to display a message "Use desktop" :-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width:700px){
+            .img{
+                display:none;
+            }
+            
+            .myh1{
+                position:absolute;
+                left: 80px;
+                top: 250px;
+            }
+        }
+        @media only screen and (min-width:700px){
+            .content{
+                display:none;
+            }
+            .img{
+                height:300px;
+                width: 300px;
+                position: absolute;
+                left:450px;
+            }
+            .myh1{
+                position: absolute;
+                left: 150px;
+                top:150px;
+            }
+            .mydiv{
+                background-color: aqua;
+                border:1px solid black;
+                height:400px;
+                width:800px;
+                padding: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">Please view in Desktop</div>
+    <div class="mydiv">
+        <h1 class="myh1">realme</h1>
+        <img src="https://image01.realme.net/general/20230816/16921790202276862a817d8ef418dae7126dfd681ca8a.png?width=1440&height=1440&size=428777.webp" class="img">
+    </div>
+</body>
+</html>
+
+
+Viewport :- 
+
+> The viewport meta tag :
+  
+  -> Ensures that the screen width is set to device width and content is rendered with this width in mind. (considering the width)
+
+  -> Designing the websites to be responsive to the size of the viewport 
+
+> Bootstrap grid system.
+
+-> To apply bootstrap to design a responsive website , we need two things :
+
+   > bootstrap stylesheet.
+
+   > meta viewport.
+ 
+** bootstrap.min.css 
+
+container>row>column - 12 fixed columns
+
+       --------------------------------------------------
+      |			Bootstrap Grid                   |
+      |--------------------------------------------------|
+      |         <div class="container">	                 |
+      |--------------------------------------------------|
+      |   <div class="row">                              |
+      |                                                  |
+      |[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]|
+       --------------------------------------------------
+
+           Grid System
+
+
+
+Program for Grid System :- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-4">
+            <h1 class="myh1 text-danger">realme</h1>
+        </div>
+        <div class="col-lg-3 col-5">
+         <img src="https://image01.realme.net/general/20230816/16921790202276862a817d8ef418dae7126dfd681ca8a.png?width=1440&height=1440&size=428777.webp" class="img-fluid">
+        </div>
+        <div class="col-md-3 col-7">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores laborum placeat quod sint doloremque nihil mollitia, ex, ad minima ullam molestiae maxime eos atque deserunt voluptas neque eius modi?</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
