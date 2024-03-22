@@ -1,3 +1,5 @@
+------------------------------------------------------------ 21/03/24 --------------------------------------------------------------------------------------
+
 Bootstrap : is a framework of HTML , css ,JAvascript to create a responsive websites and mobile first projects on the web . (Prioritizing mobile application over web-application).
 
 -> Frontend framework includes the usage of typography,forms,buttons,tables,navigation,modals,image-carousels etc and some javascript plugins.
@@ -212,3 +214,40 @@ Program for Grid System :-
 </div>
 </body>
 </html>
+
+-------------------------------------------------------------------- End of session ------------------------------------------------------------------------
+
+--------------------------------------------------------------------- 22/03/24 -----------------------------------------------------------------------------
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> here initial scale 1.0 refers to as default zoom size as 100 % .
+
+->Bootstrap grid system is used for alignment of content in aresponsive manner.
+
+
+Screen-sizes and column representation :-
+
+1. Extra small => .col-*     * indicates a number.
+
+2. Small => .col-sm-*
+
+3. medium => .col-md-* 
+
+4. large => .col-lg-*
+
+5. extra large => .col-xl-*
+
+Text - formatting :-
+
+=>for background color : bg-success -> green , bg-danger -> red , bg-warning -> yellow , bg-primary -> blue , bg-info -> powderblue , bg-dark -> black and 
+
+bg-secondary -> grey/ ash .
+
+=> for text : text-success, text-danger, text-warning, text-primary, text-info, text-dark, text-white, text-secondary .
+
+=>For text-alignment : text-center , text-start , text-end .
+
+=>For text-transform : text-uppercase , text-lowercase , text-capitalize .
+
+=>For text size and weight : h1,h2,h3,h4,h5,h6 .
+
+
