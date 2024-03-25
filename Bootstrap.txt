@@ -250,4 +250,168 @@ bg-secondary -> grey/ ash .
 
 =>For text size and weight : h1,h2,h3,h4,h5,h6 .
 
+--------------------------------------------------------------- End of session -----------------------------------------------------------------------------
 
+--------------------------------------------------------------- 23/03/24 ----------------------------------------------------------------------------------- 
+
+
+Images :-
+> img-fluid -> responsive image.
+
+> img-thumbnail -> responsive image with border.
+
+> rounded -> appplies border-radius to the image .
+
+> rounded-circle -> image is shown within the circle .
+
+
+Table :- 
+
+> table + table-bordered -> to apply border to the table .
+
+> table + table-hover -> when a content is selected that content is highlighted .
+
+> table + table-striped -> it applies black and grey to the alternate rows in a table .
+
+> table + table-responsive -> it makes the table responsive .
+
+
+thead -> headings of table .
+
+tbody -> table content .
+
+Table colors : -
+
+> table-primary : applies blue color to the table .
+
+> table-warning : applies yellow color to the table .
+
+> table-danger : appplies red color to the table .
+
+> table-dark : applies black color to the table .
+
+* table-responsive-xs -> applies responsiveness only to XS screen .
+
+Buttons : -
+
+> btn + btn-primary -> applies blue color to the button .
+
+> btn + btn-success -> applies green color to the button .
+
+> btn + btn-warning -> applies yellow color to the button .
+
+> btn + btn-dark -> applies black color to the button .
+
+> btn + btn-danger -> applies red color to the button .
+
+-->L.O.C
+
+<button class="btn btn-primary">Home</button>
+<button class="btn btn-secondary btn-lg">Hello</button>
+
+<div class="btn-group"> -> Horizontally.
+<div class="btn-group-vertical"> -> vertically.
+
+
+Button-group : btn-group / btn-group-vertical .
+
+Alerts :- used for alerting user with specific messages.
+
+> alert + alert-success -> to create an alert with green color .
+
+> alert + alert-warning -> to create an alert with yellow color .
+
+> alert + alert-danger -> to create an alert with red color .
+
+* bootstrap.bundle.min.js => cdnjs
+             |
+<script src=" "></script>
+
+-->L.O.C 
+
+<div class="col-md-6">
+<p class="alert alert-danger alert-dismissable"><a href="" class="btn-close" data-bs-dismiss="alert"></a> // content </p>
+</div>
+
+
+Dissmissable alerts :- data-bs-dismiss="alert" .
+
+Collapse content : - data-bs-toggle="collapse" .
+
+-->L.O.C
+
+<button class="btn btn-primary btn-lg" data-bs-toggle="collapse" data-bs-target="#con">View Content </button>    
+<p class="collapse" id="con">
+// content
+</p>     
+
+
+
+Bootstrap cards :-   cdnjs -fontawesome .
+
+<div class="row">
+<div class="col-md-3">
+<div class="card">
+<div class="card-holder">
+<h1 class="card-title">Virat Kohli</h1>
+</div>
+<div class="card-body">
+<img src="vk.jpg" class="card-img-top">
+</div>
+<div class="card-footer">
+<h6>Follow</h6>
+<a href="https://www.facebook.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+<a href="https://www.linkedin.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-holder">
+<h1 class="card-title">Virat Kohli</h1>
+</div>
+<div class="card-body">
+<img src="vk.jpg" class="card-img-top">
+</div>
+<div class="card-footer">
+<h6>Follow</h6>
+<a href="https://www.facebook.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+<a href="https://www.linkedin.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-holder">
+<h1 class="card-title">Virat Kohli</h1>
+</div>
+<div class="card-body">
+<img src="vk.jpg" class="card-img-top">
+</div>
+<div class="card-footer">
+<h6>Follow</h6>
+<a href="https://www.facebook.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+<a href="https://www.linkedin.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-holder">
+<h1 class="card-title">Virat Kohli</h1>
+</div>
+<div class="card-body">
+<img src="vk.jpg" class="card-img-top">
+</div>
+<div class="card-footer">
+<h6>Follow</h6>
+<a href="https://www.facebook.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+<a href="https://www.linkedin.com" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+</div>
+</div>
+</div>
+</div>
