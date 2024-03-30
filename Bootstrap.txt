@@ -170,7 +170,7 @@ Viewport :-
 
    > meta viewport.
  
-** bootstrap.min.css 
+** bootstrap.min.css    ** for JS- bootstrap.bundle.min.js
 
 container>row>column - 12 fixed columns
 
@@ -212,7 +212,7 @@ Program for Grid System :-
         </div>
     </div>
 </div>
-</body>
+</body> 
 </html>
 
 -------------------------------------------------------------------- End of session ------------------------------------------------------------------------
@@ -754,3 +754,99 @@ Navigation :- Navbars ::-
 
 </html>
 
+------------------------------------------------------------------- End of session -------------------------------------------------------------------------
+
+--------------------------------------------------------------------  28/03/24 -----------------------------------------------------------------------------
+
+
+                                              Carousels :- 
+
+
+Carousel :- Carousel is used for creating slide show of Images . that is within the landing page or any webpage.
+
+Requirements for Carousels : -
+
+-> Images should be of same size .
+
+-> create a simpliest UI.
+
+To set same size for images : 
+
+1. Go to properties view the height and width. to set all with same height and width.
+
+2. Click on Open with ms-paint >click on resize > change values in pixels and done , save it .
+
+-->L.O.C for Carousels :- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <style>
+        @media only screen and (min-width:700px){
+            #mycar{
+                position:absolute;
+                z-index:-1;
+                top:0px;
+            }
+            .nav-link,.navbar-brand{
+                color:white;
+                font-weight: 900;
+            }
+            .carousel-item{
+                width:1500px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">Goli Sodaa</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" 
+            data-bs-target="#mynav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynav">
+                
+            <ul class="navbar-nav">
+
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Our Menu</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Locations</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Contact us</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Gallery</a></li>
+            </ul>
+            </div>
+
+        </div>
+    </nav>
+         <div class="carousel slide" id="mycar" data-bs-ride="carousel" data-bs-interval="5000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="1.png" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="2.png" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="3.png" alt="" class="d-block w-100">
+                        </div>
+                    </div>
+                </div>
+   
+
+</body>
+</html>
+
+------------------------------------------------------------------- End of session -------------------------------------------------------------------------
+
+------------------------------------------------------------------- 30/03/24 -------------------------------------------------------------------------------

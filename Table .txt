@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="table table-bordered">
+        <div class="thead row">
+           <h2 class="col"> Name</h2>
+           <h2 class="col">Qualification</h2>
+           <h2 class="col">Domain</h2> 
+        </div>
+        <div class="tbody row">
+          <h3 class="col">Jayanth</h3>
+          <h3 class="col">B.tech</h3>
+          <h3 class="col">MEAN STACK</h3>
+        </div>
+        <div class="tbody row">
+            <h3 class="col">Prasad</h3>
+            <h3 class="col">B.tech</h3>
+            <h3 class="col">FULL STACK</h3>
+          </div>
+          <div class="tbody row">
+            <h3 class="col">Vali</h3>
+            <h3 class="col">B.SC</h3>
+            <h3 class="col">FULL STACK</h3>
+          </div>
+    </div>
+</body>
+</html>
